@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="../css/cssreset.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/register&login&reset.css">
+</head>
+<body>
+	<header>
+	<nav class="navbar navbar-default wk-header">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed nva-extend-btn">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="glyphicon glyphicon-cog"></span>
+	      </button>
+	      <a class="navbar-brand" href="##">悟</a>
+	      <a class="navbar-brand big" href="##">悟空云</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#">首页</a></li>
+	        <li><a href="../html/template.html">模板</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	<div class="nav-link-extend-wrap">
+		<div class="nav-link-extend">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="../html/template.html">模板</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+	</header>
+	
+	<main>
+		<div class="wrap">
+			<div class="register animated">
+				<div class="section-box">
+					<h3 class="title">注册</h3>
+					<div class="content">
+						<div class="regst-phone">
+							<p class="input-title">设置手机号</p>
+							<input type="text" placeholder="设置手机号">
+							<span class="error phone-error"></span>
+						</div>
+						<div class="regst-mes-code">
+							
+							<p class="input-title">输入短信验证码</p>
+							<div class="regst-mes-code-wrap">
+								<input type="text" placeholder="输入短信验证码" onkeypress="return event.keyCode>=48&&event.keyCode<=57" ng-pattern="/[^a-zA-Z]/">
+								<span class="arrow-up glyphicon glyphicon-triangle-top"></span>
+								<span class="arrow-down glyphicon glyphicon-triangle-bottom"></span>
+								<button class="send-code">发送验证码</button>
+							</div>
+							<span class="error mec-code-error"></span>
+						</div>
+						<div class="regst-email">
+							<p class="input-title">设置邮箱</p>
+							<input type="text" placeholder="设置邮箱">
+							<span class="error email-error"></span>
+						</div>
+						<div class="regst-password">
+							<p class="input-title">设置密码</p>
+							<input type="password" placeholder="设置密码">
+							<span class="error password-error"></span>
+						</div>
+						<div class="regst-conf-password">
+							<p class="input-title">确认密码</p>
+							<input type="password" placeholder="确认密码">
+							<span class="error conf-password-error"></span>
+						</div>
+						<p class="server-term">注册即代表同意 <a href="##">悟空云"服务条款"及"法律声明"</a></p>
+						<button class="quick-regs mybtn" disabled="disabled">
+							快速注册
+						</button>
+					</div>
+				</div>
+				<div class="regs-bottom">
+					<button class="login-link">
+							已有账号？登录
+					</button>
+					<a class="back-index" href="" title="">返回到主站</a>
+				</div>
+			</div>
+			<div class="login animated">
+				<div class="section-box">
+					<h3 class="title">登录</h3>
+					<div class="content">
+						<div class="login-phmail">
+							<p class="input-title">手机号/邮箱</p>
+							<input type="text" placeholder="请输入手机号/邮箱">
+							<span class="error login-phmail-error"></span>
+						</div>
+						<div class="login-password">
+							<p class="input-title">输入密码</p>
+							<input type="password" placeholder="输入密码">
+							<span class="error login-password-error"></span>
+						</div>
+						<button class="login-btn mybtn" disabled="disabled">安全登录</button>
+					</div>
+				</div>
+				<div class="login-bottom">
+					<button class="register-link">
+						免费注册
+					</button>
+						<button class="reset-link">
+							忘记密码？重置
+						</button>
+						<a class="back-index" href="" title="">返回到主站</a>
+				</div>
+			</div>
+			<div class="reset animated">
+				<div class="section-box">
+					<h3 class="title">重置密码</h3>
+					<div class="content">
+						<div class="reset-phone">
+							<p class="input-title">输入您的手机号</p>
+							<input type="text" placeholder="输入您的手机号">
+							<span class="error reset-phone-error"></span>
+						</div>
+						<div class="reset-mes-code">
+							
+							<p class="input-title">输入短信验证码</p>
+							<div class="reset-mes-code-wrap">
+								<input type="text" placeholder="输入短信验证码" onkeypress="return event.keyCode>=48&&event.keyCode<=57" ng-pattern="/[^a-zA-Z]/">
+								<span class="arrow-up reup glyphicon glyphicon-triangle-top"></span>
+								<span class="arrow-down redown glyphicon glyphicon-triangle-bottom"></span>
+								<button class="send-code">发送验证码</button>
+							</div>
+							<span class="error reset-mec-code-error"></span>
+						</div>
+						<div class="reset-password">
+							<p class="input-title">新密码</p>
+							<input type="password" placeholder="输入新密码,长度6-16位之间">
+							<span class="error reset-password-error"></span>
+						</div>
+						<div class="reset-conf-password">
+							<p class="input-title">确认新密码</p>
+							<input type="password" placeholder="确认新密码">
+							<span class="error reset-conf-password-error"></span>
+						</div>
+						<button class="reset-password-btn mybtn" disabled="disabled">重置密码</button>
+						<div class="reset-caution">
+							<i></i>温馨提醒：为保护您的账号安全，重置密码需要验证手机号和邮箱！给您带来的不便请谅解！
+						</div>
+					</div>
+				</div>
+				<div class="reset-bottom">
+					<button class="reset-login-link">
+							登录
+					</button>
+					<a class="back-index" href="" title="">返回到主站</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="top-caution">
+		<p class="top-caution-txt"></p>
+		<span class="top-caution-colse"></span>
+	</div>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/register&login&reset.js"></script>
+</body>
+</html>
